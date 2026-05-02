@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "pkg/proto";
+
+package proto;
+
+service Health {
+    rpc Get(GetHealthRequest) returns (GetHealthResponse) {}
+}
+
+message GetHealthRequest {
+}
+
+message GetHealthResponse {
+}
